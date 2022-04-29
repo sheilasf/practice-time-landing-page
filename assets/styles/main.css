@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 28px 0;
+}
+
+.header-logo {
+    display: block;
+}
