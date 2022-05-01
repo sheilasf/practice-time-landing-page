@@ -87,9 +87,51 @@ body {
     font-size: 16px;
 }
 
+.bottom-cards {
+    margin-top: 140px;
+    background: linear-gradient(180deg, #00C8FF 0%, #15ACD6 100%);
+}
+
+.bottom-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: -62px;
+}
+
+.bottom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 32px 66px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-card-image {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.bottom-card-description {
+    max-width: 368px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 415px) {
     .main-banner-desktop,
     .middle-banner-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .main-banner-mobile,
+    .middle-banner-mobile {
         display: none;
     }
 }
@@ -98,6 +140,20 @@ body {
     .top-cards {
         grid-template-columns: 1fr;
         padding: 36px 26px;
+    }
+
+    .bottom-cards {
+        margin-top: 114px;
+        padding: 0px 26px;
+    }
+
+    .bottom-cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .bottom-card-description {
+        font-size: 14px; 
     }
 }
 
@@ -125,13 +181,6 @@ body {
     }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1280px) {
-    .top-infocard-text {
-        max-width: 520px;
-        margin-right: 70px;
-    }
-}
-
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .top-cards {
         grid-template-columns: repeat(2, max-content);
@@ -139,10 +188,16 @@ body {
     }
 }
 
-@media screen and (min-width: 415px) {
-    .main-banner-mobile,
-    .middle-banner-mobile {
-        display: none;
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .bottom-card-description {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+    .top-infocard-text {
+        max-width: 520px;
+        margin-right: 70px;
     }
 }
 
