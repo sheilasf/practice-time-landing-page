@@ -149,6 +149,31 @@ body {
     line-height: 24px;
 }
 
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 0 ;
+    background: #000000;
+}
+
+.footer-icons {
+    display: flex;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.footer-icon {
+    margin: 0 8px;
+}
+
+.footer-text {
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 10px;
+    color: #BDBDBD;
+}
+
 @media screen and (max-width: 415px) {
     .main-banner-desktop,
     .middle-banner-desktop {
@@ -181,6 +206,15 @@ body {
 
     .bottom-card-description {
         font-size: 14px; 
+    }
+
+    .page-footer {
+        padding-bottom: 26px;
+        text-align: center;
+    }
+
+    .footer-text {
+        max-width: 280px;
     }
 }
 
