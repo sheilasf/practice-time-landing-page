@@ -122,6 +122,33 @@ body {
     font-size: 16px;
 }
 
+.bottom-infocard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 142px 0 ;
+}
+
+.bottom-inforcard-image {
+    margin-right: 40px;
+}
+
+.bottom-infocard-text {
+    max-width: 550px;
+}
+
+.bottom-infocard-title { 
+    margin-bottom: 18px;
+    line-height: 1;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.bottom-inforcard-description {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 @media screen and (max-width: 415px) {
     .main-banner-desktop,
     .middle-banner-desktop {
@@ -179,6 +206,25 @@ body {
         width: 100%;
         max-width: 240px;
     }
+
+    .bottom-infocard {
+        flex-direction: column;
+        padding: 80px 0 136px;
+    }
+
+    .bottom-inforcard-image {
+        width: 100%;
+        max-width: 596px;
+        margin: 0 0 50px;
+    }
+
+    .bottom-infocard-title {
+        font-size: 24px;
+    }
+
+    .bottom-infocard-text {
+        padding: 0 26px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -198,6 +244,14 @@ body {
     .top-infocard-text {
         max-width: 520px;
         margin-right: 70px;
+    }
+
+    .bottom-inforcard-image {
+        max-width: 480px;
+    }
+
+    .bottom-infocard-text {
+        max-width: 400px;
     }
 }
 
